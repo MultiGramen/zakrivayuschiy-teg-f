@@ -13,4 +13,205 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background: repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px), 
+  repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px), 
+  linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+  object-fit: cover;
+  font-family: var(--inter-family);
+}
+
+.header {
+  min-height: 427px;
+  background-image: url('../images/4dd65e8c77a1749122eb9020559ad46f35cd3193.png');
+  margin-block-start: 100px;
+}
+
+.header__content {
+  max-width: var(--width-content);
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  min-height: 327px;
+  border: 2px solid black;
+  background-color: white;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  font-family: var(--pressstart2p-family);
+}
+
+.subtitle {
+  font-family: var(--pressstart2p-family);
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  display: grid;
+  justify-content: center;
+}
+
+.section {
+  background: white;
+  max-width: var(--width-content);
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  border: 2px solid black;
+  margin-block-end: 50px;
+}
+
+.card__title {
+  padding-block-start: 4px;
+  padding-block-end: 4px;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+  font-weight: var(--card__title-weight);
+  font-size: var(--card__title-size);
+}
+
+.image__container {
+  position: relative;
+}
+
+/* Фильтры для изображений вынесены в файл filter.css */
+
+.card__image {
+  width: 100%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.image__text {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  font-family: var(--pressstart2p-family);
+  font-size: var(--image__text-size);
+  border: 1px;
+  opacity: 0.5;
+  -webkit-text-stroke: var(--image__text-stroke);
+  text-stroke: var(--image__text-stroke);
+  mix-blend-mode: hard-light;
+}
+
+.block__content {
+  padding-block-start: 25px;
+  padding-block-end: 25px;
+  padding-inline-start: 25px;
+  padding-inline-end: 25px;
+}
+
+.characteristic {
+  padding-block-start: 25px;
+}
+
+.button-box {
+  display: grid;
+  justify-content: end;
+  margin-block-start: 25px;
+  margin-block-end: 25px;
+  margin-inline-end: 25px;
+}
+
+.card__icon-button {
+  border: 1px solid white;
+}
+
+.card__effect-button {
+  border: 2px solid black;
+  font-family: var(--pressstart2p-family);
+  padding-block-start: 9px;
+  padding-block-end: 9px;
+  padding-inline-start: 17px;
+  padding-inline-end: 17px;
+  position: relative;
+}
+
+.card-button-box {
+  position: relative;
+  color: var(--color-like);
+  mix-blend-mode: difference;
+  z-index: 1;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 2px 2px 0px black;
+}
+
+.card__effect-button:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.card__effect-button:hover:after {
+  transform: scaleX(1);
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-block-end: 100px;
+}
+
+.button-save {
+  display: grid;
+  justify-items: center;
+  border: 1px solid black;
+  padding-block-start: 15px;
+  padding-block-end: 15px;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  font-family: var(--pressstart2p-family);
+  font-size: var(--button__text-size);
+}
+
+.button-save:focus {
+  border: none;
+  box-shadow: 2px 2px 0px;
+  transition: background-color 0.3s ease;
+}
+
+.modalDialog {
+  font-family: var(--pressstart2p-family);
+  font-size: var(--button__text-size);
+}
+
+.modalDialog::backdrop {
+  position: fixed;
+  inset: 0px;
+  opacity: 0.75;
+  background-color: black;
+}
+
+.modalDialogBlock {
+  display: grid;
+  grid-template-columns: 59px 1fr;
+  align-items: center;
+  width: 261px;
+}
+
+.modalDialogText {
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.modalDialogClose {
+  width: 261px;
+  height: 38px;
+  border: 2px solid black;
+  margin-block-start: 30px;
+}
+
+@media (width <= 375px) {
+  .button-save-block {
+    display: grid;
+    justify-items: center;
+  }
 }
