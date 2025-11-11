@@ -17,4 +17,9 @@
 
   --button__text-size: 14px;
   --color-like: white;
+
+  --contour: black;
+  --main-body: black;
+  --animation-fill-color: #FF0000;
+  --contour-color: black;
 }
