@@ -128,6 +128,7 @@
 }
 
 .card__like-button {
+  min-height: 38px;
   border: 2px solid black;
   padding-block-start: 9px;
   padding-block-end: 9px;
@@ -154,11 +155,11 @@ button:focus {
 }
 
 .button-save {
+  min-height: 55px;
   display: grid;
   justify-items: center;
   border: 1px solid black;
-  padding-block-start: 15px;
-  padding-block-end: 15px;
+  align-items: center;
   padding-inline-start: 20px;
   padding-inline-end: 20px;
   font-size: var(--button__text-size);
@@ -290,6 +291,10 @@ button:focus {
 }
 
 @media (width <= 375px) {
+  .button-save {
+    min-height: 84px;
+  }
+
   .button-save-block {
     display: grid;
     justify-items: center;
