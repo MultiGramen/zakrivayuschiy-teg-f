@@ -30,7 +30,7 @@
   max-width: var(--width-content);
   margin-inline-start: auto;
   margin-inline-end: auto;
-  min-height: 327px;
+  min-height: 325px;
   border: 2px solid black;
   background-color: white;
   display: grid;
@@ -112,10 +112,19 @@
   margin-inline-end: 25px;
 }
 
+.button__text {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .card__icon-button {
   background: white;
   border: 1px solid white;
-  margin-inline-end: 12px;
+}
+
+.card__icon-button:hover {
+  border: 2px solid black;
 }
 
 .card__like-button {
@@ -213,6 +222,11 @@ button:focus {
   margin-block-start: 30px;
 }
 
+.like-icon {
+  transform-origin: center;
+  cursor: pointer;
+}
+
 .like-icon .sparks {
   opacity: 0;
 }
@@ -220,6 +234,11 @@ button:focus {
 .like-icon .contour {
   fill: var(--contour-color);
   transition: fill 0.1s linear;
+}
+
+.like-icon .core {
+  fill: transparent;
+  transition: fill 0.3s 0.03s linear;
 }
 
 .like-icon .main-body {
@@ -263,7 +282,7 @@ button:focus {
 }
 
 .like-icon.is-liked {
-  animation: change-scale 0.3s 0.1s ease-in;
+  animation: heart-animation 0.3s 0.1s ease-in;
 }
 
 .like-icon.is-liked .sparks {
