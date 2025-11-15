@@ -1,19 +1,23 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-  --inter-family: "Inter", sans-serif;
-  --pressstart2p-family: "Press Start 2P", sans-serif;
+  --inter-family: "Inter";
+  --pressstart2p-family: "Press Start 2P";
+  --weight-page: 400;
+  --weight-card__title: 715; 
+  --font-size-title: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --font-size-subtitle: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 
   --width-content: clamp(375px, 50%, 1440px);
   --font-size-button: 14px;
   --border-button: 2px solid black;
 
-
-  --card__title-weight: 715;
   --card__title-size: 18px;
 
   --image__text-size: 14px;
   --image__text-stroke: 1px white;
+
+  --font-size-text: 18px;
 
   --button__text-size: 14px;
   --color-like: white;

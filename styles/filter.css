@@ -1,33 +1,33 @@
 /* Здесь хранятся все фильтры для изображений постов. */
 
-.bird {
+.blur {
   filter: blur(3px);
 }
 
-.people {
+.invert {
   filter: invert(20%)
 }
 
-.car {
+.opacity {
   filter: opacity(75%);
 }
 
-.woman {
+.sepia {
   filter: sepia(100%);
 }
 
-.forest {
+.contrast {
   filter: contrast(155%);
 }
 
-.face {
+.saturate {
   filter: saturate(200%);
 }
 
-.football-field {
+.brightness-blur {
   filter: brightness(0.4) blur(2px);
 }
 
-.winter {
-  filter: invert(25%);
+.invert-brightness {
+  filter: invert(25%) brightness(0.9);
 }
