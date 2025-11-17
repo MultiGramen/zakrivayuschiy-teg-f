@@ -26,8 +26,8 @@
 .header {
   margin-block-start: 98px;
   margin-block-end: 95px;
-  margin-inline-start: 368px;
-  margin-inline-end: 368px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
   padding-block-start: 122px;
   padding-block-end: 130px;
   max-width: var(--width-content, 50%);
@@ -55,8 +55,8 @@
 .section {
   background: white;
   max-width: var(--width-content, 50%);
-  margin-inline-start: 370px;
-  margin-inline-end: 370px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
   border: 2px solid black;
   margin-block-end: 50px;
 }
