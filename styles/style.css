@@ -350,3 +350,14 @@
     padding-inline-end: 40px;
   }
 }
+
+@supports (font-variation-settings: normal) {
+  .page {
+    font-family: var(--inter-family);
+    font-variation-settings: "wght" var(--weight-page);
+  }
+
+  .card__title {
+    font-variation-settings: "wght" var(--weight-card__title);
+  }
+}
