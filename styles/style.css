@@ -90,6 +90,7 @@
   border: 1px;
   opacity: 0.5;
   mix-blend-mode: hard-light;
+  text-shadow: 0 0 1px var(--image__text-stroke);
 }
 
 @supports (text-stroke: var(--image__text-stroke, 1px white)) or (-webkit-text-stroke: var(--image__text-stroke, 1px white)) {
@@ -138,6 +139,10 @@
 }
 
 .card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
   border: 2px solid black;
 }
 
@@ -162,6 +167,11 @@
 .button:focus {
   outline: none;
   box-shadow: 2px 2px 0px black;
+  transition: fill 0.3s ease;
+}
+
+.button:focus-visible {
+  box-shadow: 2px 2px #000;
 }
 
 .button-save-box {
@@ -180,16 +190,12 @@
   font-size: var(--button__text-size, 14px);
 }
 
-.button-save:focus {
-  border: none;
-  transition: background-color 0.3s ease;
-}
-
 .button {
   background: white;
   font-family: var(--pressstart2p-family, fantasy);
   position: relative;
   border: 2px solid black;
+  transition: box-shadow 0.3s ease;
 }
 
 .button:after {
@@ -214,6 +220,7 @@
   padding-block-end: 30px;
   padding-inline-start: 30px;
   padding-inline-end: 30px;
+  border: 2px solid black;
 }
 
 .modalDialog[open] {
