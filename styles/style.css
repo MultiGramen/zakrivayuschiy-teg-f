@@ -30,7 +30,7 @@
   margin-inline-end: auto;
   padding-block-start: 122px;
   padding-block-end: 130px;
-  max-width: var(--width-content, 50%);
+  max-width: var(--width-content, 49%);
   border: 2px solid black;
   background: white;
   display: grid;
@@ -54,7 +54,7 @@
 
 .section {
   background: white;
-  max-width: var(--width-content, 50%);
+  max-width: var(--width-content, 49%);
   margin-inline-start: auto;
   margin-inline-end: auto;
   border: 2px solid black;
@@ -90,7 +90,7 @@
   border: 1px;
   opacity: 0.5;
   mix-blend-mode: hard-light;
-  text-shadow: 0 0 1px var(--image__text-stroke);
+  text-shadow: 0 0 1px var(--image__text-color);
 }
 
 @supports (text-stroke: var(--image__text-stroke, 1px white)) or (-webkit-text-stroke: var(--image__text-stroke, 1px white)) {
@@ -112,6 +112,7 @@
 
 .block__content > p {
   font-size: var(--font-size-text, 18px);
+  line-height: var(--line-height, 21px);
 }
 
 .button-box {
@@ -136,6 +137,7 @@
   align-content: center;
   background: white;
   border: 1px solid white;
+  transition: border 0.3s ease; 
 }
 
 .card__icon-button:focus {
@@ -147,7 +149,7 @@
 }
 
 .card__like-button {
-  width: 118px;
+  width: 130px;
   height: 38px;
   padding-block-start: 9px;
   padding-block-end: 9px;
@@ -155,6 +157,7 @@
   padding-inline-end: 17px;
   display: grid;
   justify-content: center;
+  bottom: 5px;
 }
 
 .card-button-box {
@@ -166,12 +169,10 @@
 
 .button:focus {
   outline: none;
-  box-shadow: 2px 2px 0px black;
-  transition: fill 0.3s ease;
 }
 
 .button:focus-visible {
-  box-shadow: 2px 2px #000;
+  box-shadow: 2px 2px 0 #000;
 }
 
 .button-save-box {
@@ -181,13 +182,20 @@
 }
 
 .button-save {
+  width: 335px;
   min-height: 55px;
   display: grid;
   justify-items: center;
   align-items: center;
-  padding-inline-start: 20px;
-  padding-inline-end: 20px;
   font-size: var(--button__text-size, 14px);
+  line-height: 90%;
+  right: 2px;
+  bottom: 5px;
+}
+
+.icon-mobile {
+  width: 21px;
+  height: 21px;
 }
 
 .button {
@@ -213,40 +221,40 @@
   cursor: pointer;
 }
 
-.modalDialog {
+.modaldialog {
   font-family: var(--pressstart2p-family, fantasy);
   font-size: var(--button__text-size, 14px);
   padding-block-start: 30px;
   padding-block-end: 30px;
-  padding-inline-start: 30px;
-  padding-inline-end: 30px;
+  padding-inline-start: 28px;
+  padding-inline-end: 28px;
   border: 2px solid black;
 }
 
-.modalDialog[open] {
+.modaldialog[open] {
   display: grid;
 }
 
-.modalDialog::backdrop {
+.modaldialog::backdrop {
   opacity: 0.75;
   background: black;
 }
 
-.modalDialogBlock {
+.modaldialog-block {
   display: grid;
   grid-template-columns: 59px 1fr;
   align-items: center;
   width: 261px;
 }
 
-.modalDialogText {
+.modaldialog-text {
   font-size: 14px;
   line-height: 150%;
   text-transform: uppercase;
 }
 
-.modalDialogClose {
-  width: 261px;
+.modaldialog-close {
+  width: 293px;
   height: 38px;
   margin-block-start: 30px;
 }
@@ -322,8 +330,6 @@
   .header {
     margin-block-start: 100px;
     margin-block-end: 100px;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
     padding-block-start: 115px;
     padding-block-end: 116px;
     gap: 15px;
@@ -335,25 +341,32 @@
   }
 
   .button-save {
+    width: 306px;
     min-height: 84px;
   }
 
   .button-save-block {
     display: grid;
     justify-items: center;
+    gap: 15px;
   }
 
-  .modalDialog {
+  .icon-mobile {
+    width: 28px;
+    height: 28px;
+  }
+
+  .modaldialog {
     padding-block-start: 30px;
     padding-block-end: 30px;
-    padding-inline-start: 40px;
-    padding-inline-end: 40px;
+    padding-inline-start: 22px;
+    padding-inline-end: 22px;
   }
 }
 
 @supports (font-variation-settings: normal) {
   .page {
-    font-family: var(--inter-family);
+    font-family: var(--inter-family, sans-serif);
     font-variation-settings: "wght" var(--weight-page);
   }
 

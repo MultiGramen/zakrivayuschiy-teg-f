@@ -328,9 +328,9 @@
         </article>
       </section>
       <section class="button-save-box">
-        <button type="button" onclick="window['modalDialog'].showModal()" class="button button-save">
+        <button type="button" onclick="window['modaldialog'].showModal()" class="button button-save">
           <span class="button-save-block card-button-box">
-            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor">
+            <svg class="icon-mobile" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
               <use href="./svg/sprite.svg#diskette-xs"></use>
             </svg>
           Сохранить на память
@@ -338,14 +338,14 @@
         </button>
       </section>
     </main>
-    <dialog id="modalDialog" class="modalDialog">
-      <div class="modalDialogBlock">
+    <dialog id="modaldialog" class="modaldialog">
+      <div class="modaldialog-block">
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="39" height="39" fill="none">
           <use href="./svg/sprite.svg#diskette-s"></use>
         </svg>
-        <p class="modalDialogText">Вставьте дискету, чтобы продолжить</p>
+        <p class="modaldialog-text">Вставьте дискету, чтобы продолжить</p>
       </div>
-      <button type="button" onclick="window['modalDialog'].close()" class="button modalDialogClose">
+      <button type="button" onclick="window['modaldialog'].close()" class="button modaldialog-close">
         <span class="card-button-box">
             ОК
         </span>

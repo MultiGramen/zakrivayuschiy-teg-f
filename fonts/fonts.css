@@ -7,7 +7,7 @@
     url("./Inter-Variable.woff2") format('woff2 supports variations'),
     url("./Inter-Variable.woff2") format('woff2-variations');
     
-  font-weight: 400 785;
+  font-weight: 400 715;
 }
 
 @font-face {
@@ -16,15 +16,4 @@
   src:
     local('Press Start 2P'),
     url("./PressStart2P-Regular.woff") format('woff');
-}
-
-@supports (font-variation-settings: normal) {
-  .page {
-    font-family: var(--inter-family);
-    font-variation-settings: "wght" var(--weight-page);
-  }
-
-  .card__title {
-    font-variation-settings: "wght" var(--weight-card__title);
-  }
 }

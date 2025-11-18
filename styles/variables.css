@@ -4,20 +4,22 @@
   --inter-family: "Inter";
   --pressstart2p-family: "Press Start 2P";
   --weight-page: 400;
-  --weight-card__title: 785; 
+  --weight-card__title: 715; 
   --font-size-title: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --font-size-subtitle: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 
-  --width-content: clamp(375px, 50%, 1440px);
+  --width-content: clamp(375px, 49%, 1440px);
   --font-size-button: 14px;
   --border-button: 2px solid black;
 
   --card__title-size: 18px;
 
   --image__text-size: 14px;
+  --image__text-color: white;
   --image__text-stroke: 1px white;
 
   --font-size-text: 18px;
+  --line-height: 21px;
 
   --button__text-size: 14px;
   --color-like: white;
