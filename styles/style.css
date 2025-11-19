@@ -197,6 +197,11 @@
   height: 21px;
 }
 
+.icon-s {
+  width: 39px;
+  height: 39px;
+}
+
 .button {
   background: white;
   font-family: var(--pressstart2p-family, fantasy);
@@ -325,7 +330,7 @@
   animation: change-opacity 0.3s 0.3s ease-in;
 }
 
-@media (width <=375px) {
+@media (width <= 375px) {
   .header {
     margin-block-start: 100px;
     margin-block-end: 100px;
@@ -344,15 +349,15 @@
     min-height: 84px;
   }
 
+  .icon {
+    width: 28px;
+    height: 28px;
+  }
+
   .button-save-block {
     display: grid;
     justify-items: center;
     gap: 15px;
-  }
-
-  .icon-mobile {
-    width: 28px;
-    height: 28px;
   }
 
   .modaldialog {
