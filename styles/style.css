@@ -122,7 +122,7 @@
   justify-content: end;
   margin-block-start: 25px;
   margin-block-end: 25px;
-  margin-inline-end: 18px;
+  margin-inline-end: 27px;
 }
 
 .button__text {
@@ -191,6 +191,7 @@
   align-items: center;
   font-size: var(--button__text-size, 14px);
   line-height: 90%;
+  margin-inline-end: 10px;
 }
 
 .icon {
