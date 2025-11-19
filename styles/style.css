@@ -13,9 +13,9 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  background: repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px), 
-  repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px), 
-  linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+  background: repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -30,6 +30,7 @@
   margin-inline-end: auto;
   padding-block-start: 122px;
   padding-block-end: 130px;
+  padding-inline-start: 12px;
   max-width: var(--width-content, 49%);
   border: 2px solid black;
   background: white;
@@ -50,6 +51,10 @@
   display: grid;
   justify-content: center;
   text-transform: uppercase;
+}
+
+.content {
+  padding-inline-start: 10px;
 }
 
 .section {
@@ -110,7 +115,7 @@
   row-gap: 25px;
 }
 
-.block__content > p {
+.block__content>p {
   font-size: var(--font-size-text, 18px);
   line-height: var(--line-height, 21px);
 }
@@ -137,7 +142,7 @@
   align-content: center;
   background: white;
   border: 1px solid white;
-  transition: border 0.3s ease; 
+  transition: border 0.3s ease;
 }
 
 .card__icon-button:focus {
@@ -324,7 +329,7 @@
   animation: change-opacity 0.3s 0.3s ease-in;
 }
 
-@media (width <= 375px) {
+@media (width <=375px) {
   .header {
     margin-block-start: 100px;
     margin-block-end: 100px;
