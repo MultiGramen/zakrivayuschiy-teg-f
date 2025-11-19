@@ -53,10 +53,6 @@
   text-transform: uppercase;
 }
 
-.content {
-  padding-inline-start: 10px;
-}
-
 .section {
   background: white;
   max-width: var(--width-content, 49%);
