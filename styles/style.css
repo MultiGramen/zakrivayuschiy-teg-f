@@ -31,6 +31,7 @@
   padding-block-start: 122px;
   padding-block-end: 130px;
   padding-inline-start: 12px;
+  padding-inline-end: 10px;
   max-width: var(--width-content, 49%);
   border: 2px solid black;
   background: white;
