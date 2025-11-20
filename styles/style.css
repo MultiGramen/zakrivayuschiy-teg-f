@@ -60,7 +60,7 @@
   margin-inline-start: auto;
   margin-inline-end: auto;
   border: 2px solid black;
-  margin-block-end: 49px;
+  margin-block-end: 50px;
 }
 
 .card__title {
@@ -109,7 +109,7 @@
   padding-inline-start: 25px;
   padding-inline-end: 20px;
   display: grid;
-  row-gap: 25px;
+  row-gap: 23px;
 }
 
 .block__content>p {
@@ -120,7 +120,7 @@
 .button-box {
   display: grid;
   justify-content: end;
-  margin-block-start: 25px;
+  margin-block-start: 24px;
   margin-block-end: 25px;
   margin-inline-end: 27px;
 }
@@ -332,6 +332,13 @@
   animation: change-opacity 0.3s 0.3s ease-in;
 }
 
+@media (width < 400px) {
+  .modaldialog {
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+  }
+}
+
 @media (width <= 375px) {
   .header {
     margin-block-start: 100px;
@@ -363,10 +370,15 @@
   }
 
   .modaldialog {
+    width: 375px;
     padding-block-start: 30px;
     padding-block-end: 30px;
-    padding-inline-start: 22px;
+    padding-inline-start: 40px;
     padding-inline-end: 22px;
+  }
+
+  .modaldialog-close {
+    width: 261px;
   }
 }
 
