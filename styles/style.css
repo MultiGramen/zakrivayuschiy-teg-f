@@ -28,7 +28,7 @@
   margin-block-end: 95px;
   margin-inline-start: auto;
   margin-inline-end: auto;
-  padding-block-start: 122px;
+  padding-block-start: 130px;
   padding-block-end: 130px;
   padding-inline-start: 12px;
   padding-inline-end: 10px;
@@ -52,6 +52,7 @@
   display: grid;
   justify-content: center;
   text-transform: uppercase;
+  margin-block-start: 10px;
 }
 
 .section {
@@ -61,6 +62,7 @@
   margin-inline-end: auto;
   border: 2px solid black;
   margin-block-end: 50px;
+  padding-inline-start: 2px;
 }
 
 .card__title {
@@ -339,7 +341,7 @@
   }
 }
 
-@media (width <= 375px) {
+@media (width <=375px) {
   .header {
     margin-block-start: 100px;
     margin-block-end: 100px;
@@ -351,6 +353,10 @@
   .section {
     margin-inline-start: auto;
     margin-inline-end: auto;
+  }
+
+  .button-box  {
+    margin-inline-end: 23px;
   }
 
   .button-save {
@@ -366,7 +372,7 @@
   .button-save-block {
     display: grid;
     justify-items: center;
-    gap: 15px;
+    gap: 10px;
   }
 
   .modaldialog {
